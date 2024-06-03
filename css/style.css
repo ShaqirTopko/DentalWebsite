@@ -1,0 +1,525 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Lumanosimo&family=PT+Serif&family=Playfair+Display:ital,wght@1,500&family=Seymour+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/*Header*/
+header {
+    background-color:transparent; 
+    color:black; 
+    padding: 25px 0;
+    position: fixed; 
+    width: 100%; 
+    z-index: 1000;
+    transition: background-color 0.5s ease; 
+}
+
+header.scrolled {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(150,150,150,0.510329131652661) 0%, rgba(21,85,170,1) 72%);
+     padding: 15px 0;
+}
+
+.container {
+    max-width: 1400px; 
+    margin: 0 auto; 
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a{
+    text-decoration: none;
+   
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+}
+
+.nav-items {
+    display: flex;
+}
+
+.nav-items li {
+    margin: 0 20px;
+    display: inline; 
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #fff; 
+    font-size: 17px;
+}
+  .navbar a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+
+  .navbar a:hover::after{
+    width: 100%;
+  }
+
+/*//////////////////////////////////////////*/
+
+
+/*LoginForma*/
+.loginForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 50px); 
+    margin-top: 10px; 
+}
+
+.login{
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(15px);
+    color: #fff;
+    border-radius: 12px;
+    padding: 30px 40px;
+    margin-top: 50px;
+}
+
+.login h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.login .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color: #fff;
+}
+
+.login .forgot{
+    display: flex;
+    font-size: 14.5px;
+    margin: -10px 0 15px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+.forgot a{
+    color: black;
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+.forgot a:hover{
+    text-decoration: underline;
+}
+
+.login .btn{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.login .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a{
+    color: darkred;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+}
+
+/*/////////////////////////////////////////*/
+
+
+
+/*Home Page*/
+
+
+
+.slide-bar {
+    width: 100%; 
+    height: auto; 
+    overflow: hidden; 
+}
+
+.slide-bar video {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+}
+
+
+.about-section {
+    display: flex;
+    align-items: center;
+    padding: 20px 50px; 
+    margin-top: 80px;
+}
+
+.about-image {
+    flex-basis: 40%; 
+    margin-right: 30px;
+    margin-left: 100px;
+    transition: 0.5s;
+}
+
+.about-image img {
+    width: 100%; 
+    height: 500px; 
+    border-radius: 15px;
+}
+
+.about-content {
+    flex-basis: 40%; 
+    margin-left: 85px;
+}
+
+.about-content h1 {
+    color: #000; 
+    margin-bottom: 15px;
+    font-family: "Lilita One", sans-serif;
+}
+
+.about-content p {
+    color: #333; 
+    
+}
+
+
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 70px;
+}
+
+.stat-card {
+    width: 200px;
+    text-align: center;
+    padding: 20px 50px;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    box-shadow: 10px 16px 5px 0px rgba(0, 0, 0, 0.303);
+}
+
+.icon img {
+    width: 75px;
+    height: 75px;
+}
+
+.number {
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    font-family: "Lilita One", sans-serif;
+}
+
+.text {
+    font-size: 18px;
+    color: #333;
+    font-family: "Lilita One", sans-serif;
+}
+
+
+/*PJESA KU SHIHET FOTO BASHK ME BUTONIN PER TERMINE*/
+
+.newsletter{
+    background:url(../images/dentalwallpaper.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Lilita One", sans-serif;
+    margin-top: 80px;
+    height: 300px;
+}
+
+.newsletter form{
+    max-width: 45rem;
+    margin-left: auto;
+    text-align: center;
+    padding:5rem 0;
+}
+
+.newsletter form h3{
+    font-size: 2.2rem;
+    color:#fff;
+    padding-bottom: .7rem;
+    font-weight: normal;
+}
+
+.newsletter form .box{
+    width: 100%;
+    margin: .7rem 0;
+    padding:1rem 1.2rem;
+    font-size: 1.6rem;
+    color:var(--black);
+    border-radius: .5rem;
+    text-transform: none;
+}
+
+/*pjesa e butonit */
+.button-19{
+  width: 200px;
+  height: 50px;
+  background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(150,150,150,0.510329131652661) 0%, rgba(21,85,170,1) 72%);
+  border-radius: 15px;
+  border-color: white;
+  font-size: 20px;
+  font-style: italic;
+  color: white;
+  font-family: 'Lumanosimo', cursive;
+  font-family: "Lilita One", sans-serif;
+
+}
+
+.button-19:hover{
+  background-color: #1CB0F6;
+}
+
+
+.container{
+    position: relative;
+}
+.container .wrapper{
+    width: 70vw;
+    height: 80vh;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    margin: 5rem auto;
+    overflow: hidden;
+}
+.container .wrapper-holder{
+    display: grid;
+    grid-template-columns: repeat(4, 100%);
+    height: 100%;
+    width: 100%;
+    animation: slider 15s ease-in-out infinite alternate;
+}
+.container #slider-img-1{
+    background-image: url(../images/picture1.jpg);
+    background-position: cover;
+}
+.container #slider-img-2{
+    background-image: url(../images/picture2.png);
+    background-position: center;
+}
+.container #slider-img-3{
+    background-image: url(../images/picture3.png);
+    background-position: center;
+}
+.container #slider-img-4{
+    background-image: url(../images/picture4.png);
+    background-position: center;
+}
+
+.container .wrapper-holder > div{
+    background-size: cover;
+    background-position: center; 
+    height: 100%; 
+    width: 100%; 
+}
+@keyframes slider{
+    0%{transform: translateX(0%);}
+    10%{transform: translateX(-100%);}
+    20%{transform: translateX(-100%);}
+    30%{transform: translateX(-200%);}
+    40%{transform: translateX(-200%);}
+    50%{transform: translateX(-200%);}
+    60%{transform: translateX(-300%);}
+    70%{transform: translateX(-300%);}
+    80%{transform: translateX(-300%);}
+    90%{transform: translateX(0%);}
+    100%{transform: translateX(0%);}
+}
+
+
+.header-section {
+    text-align: center;
+    color: darkblue; 
+    font-family: "Lilita One", sans-serif;
+    margin-top: 60px;
+    margin-bottom: -20px;
+    
+  
+}
+
+.header-section h1 {
+    font-size: 32px; 
+    margin: 20px 0; 
+    
+}
+
+.header-section p {
+    font-size: 24px; 
+    margin-bottom: 20px; 
+    
+}
+
+
+
+
+
+/*/////////////////////////////////////////////////////////////*/
+
+/*Footer*/
+
+footer{
+    position: relative;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(150,150,150,0.510329131652661) 0%, rgba(21,85,170,1) 72%);
+    height: auto;
+    width: 100%;
+    color: #fff;
+    margin-top: 0;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 70px;
+   }
+
+.footer-content p{
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    }
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.socials li{
+    margin: 0 15px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i{
+    font-size: 20px
+}
+
+
+
+/*Forma per kontaktin */
+
+.contact-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contactus-form {
+    width: 60%;
+    margin: 0 100px;
+    padding-top: 50px;
+}
+
+.contactus-form h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.contactus-form div {
+    margin-bottom: 15px;
+}
+
+.contactus-form input,
+.contactus-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid gainsboro;
+}
+
+.contactus-form .btn{
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    background-color: rgb(47, 46, 46);
+    color: white;
+    cursor: pointer;
+}
+
+.image-contact {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.image-contact img {
+    width: 100%;
+    height: 100%;
+    max-height: 800px;
+    object-fit: cover;
+}
