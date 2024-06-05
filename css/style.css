@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Lumanosimo&family=PT+Serif&family=Playfair+Display:ital,wght@1,500&family=Seymour+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -271,7 +273,6 @@ header.scrolled {
     font-family: "Lilita One", sans-serif;
 }
 
-
 /*PJESA KU SHIHET FOTO BASHK ME BUTONIN PER TERMINE*/
 
 .newsletter{
@@ -328,7 +329,6 @@ header.scrolled {
   background-color: #1CB0F6;
 }
 
-
 .container{
     position: relative;
 }
@@ -344,7 +344,7 @@ header.scrolled {
     grid-template-columns: repeat(4, 100%);
     height: 100%;
     width: 100%;
-    animation: slider 15s ease-in-out infinite alternate;
+    animation: slider1 15s ease-in-out infinite alternate;
 }
 .container #slider-img-1{
     background-image: url(../images/picture1.jpg);
@@ -369,7 +369,7 @@ header.scrolled {
     height: 100%; 
     width: 100%; 
 }
-@keyframes slider{
+@keyframes slider1{
     0%{transform: translateX(0%);}
     10%{transform: translateX(-100%);}
     20%{transform: translateX(-100%);}
@@ -383,21 +383,17 @@ header.scrolled {
     100%{transform: translateX(0%);}
 }
 
-
 .header-section {
     text-align: center;
     color: darkblue; 
     font-family: "Lilita One", sans-serif;
     margin-top: 60px;
     margin-bottom: -20px;
-    
-  
 }
 
 .header-section h1 {
     font-size: 32px; 
     margin: 20px 0; 
-    
 }
 
 .header-section p {
@@ -405,6 +401,757 @@ header.scrolled {
     margin-bottom: 20px; 
     
 }
+/*/////////////////////////////////////////////////////////////*/
+
+/*ABOUT US*/
+
+.rrethnesh{
+    padding-top: 150px;
+}
+
+
+.rrethnesh .title{
+    text-align: center;
+}
+
+.title h4{
+    display: inline-block;
+    padding: 20px;
+    color: #585757;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    word-spacing: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    text-transform: uppercase;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+    font-family: "Lilita One", sans-serif;
+}
+
+.rrethnesh .card_Container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.card_Container .card{
+    position: relative;
+    width: 500px;
+    height: 400px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 1),
+                inset 0 0 0 1000px rgba(67, 52, 109, .6);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .imbBx, .imbBx img{
+    width: 100%;
+    height: 100%;
+}
+
+.card .content{
+    position: absolute;
+    bottom: -160px;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    transition: bottom 0.5s;
+    transition-delay: 0.65s;
+}
+
+.card:hover .content{
+    bottom: 0;
+    transition-delay: 0s;
+}
+
+.content .contentBx h3{
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 15px;
+    line-height: 1.1em;
+    transition: 0.5s;
+    transition-delay: 0.6s;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.card:hover .content .contentBx h3{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.content .contentBx h3 span{
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+}
+
+.content .sci{
+    position: relative;
+    bottom: 10px;
+    display: flex;
+}
+
+.content .sci li{
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+    transition-delay: calc(0.2s * var(--i));
+}
+
+.card:hover .content .sci li{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.content .sci li a{
+    color: #fff;
+    font-size: 24px;
+}
+
+/*/////////////////////////////////////////////////////////////*/
+
+/*Before&After*/
+
+.texti{
+    padding-top: 60px;
+    margin-left: 35px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.texti h4{
+    font-family: "Lilita One", sans-serif;
+    color: darkblue;
+}
+
+/*BeforeAfter headeri diqka*/
+
+.slide-bar .img {
+    height: 100vh;
+    background-image: url("../images/sllajder1.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    animation: slider 30s infinite;
+}
+
+.slide-bar .fjala{
+    text-align: center;
+    width: 800px;
+    font-size: 65px;
+    color: #f7f7f7; 
+    padding: 20px 50px;
+    font-family: "Bebas Neue", sans-serif;
+ 
+    
+}
+
+.diviboss{
+    padding-top: 320px;
+    padding-left: 370px;
+    
+}
+
+.containera {
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+    padding: 40px;
+    align-items: center;
+    margin-left: 160px;
+}
+
+.containera h1 {
+    font-size: 48px;
+    color: #000;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.containera p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.containera ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.containera ul li {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    margin-left: 400px;
+   
+}
+
+.containera ul li::before{ 
+    content: '•'; 
+}
+
+.appointment-section {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(150,150,150,0.510329131652661) 0%, rgba(21,85,170,0.6896008403361344) 95%);
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+
+}
+
+.appointment-section h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.appointment-section p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.image-box {
+  width: 48%; 
+  margin: 1%;
+  box-sizing: border-box;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+/* Stili për modalin */
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; 
+  background-color: rgb(0,0,0,0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@keyframes slider {
+    0% {
+        background-image: url("../images/sllajder1.jpg");
+    }
+    25% {
+        background-image: url("../images/sllajder2.jpg");
+    }
+    50% {
+        background-image: url("../images/sllajder3.jpg");
+    }
+    75% {
+        background-image: url("../images/sllajder4.jpg");
+    }
+    100% {
+        background-image: url("../images/sllajder5.jpg"); 
+    }
+}
+
+/*Before after fotot e njerzve*/
+
+.beforeafter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .image-box img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s, outline 0.2s; 
+    outline: 3px solid transparent; 
+    outline-offset: -3px; 
+  }
+  
+  .image-box img:hover {
+    outline-color: darkblue; 
+  }
+
+  /* Stili për modalin */
+  .modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.9); 
+    padding-top: 130px;
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1200px; 
+}
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+/*/////////////////////////////////////////////////////////////*/
+
+/*SERVICES*/
+
+
+.container-services {
+    display: flex;
+    background-color: #B0C4DE;
+    padding: 0 100px;
+    height: 100vh;
+
+}
+
+.services {
+    width: 50%;
+    display: flex;
+    height: 85vh;
+    padding-top: 170px;
+}
+
+.services .card {
+    flex: 1;
+    border-radius: 100px;
+    margin: 0;
+    padding: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 500ms cubic-bezier(.14,.69,.93,1);
+    box-shadow: 0 2px 20px rgba(0,0,0,0.5);
+}
+
+.services .card:hover {
+    flex-basis: 35vw;
+}
+
+.text-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+}
+
+.text-section h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    text-align: left;
+    font-family: "Lilita One", sans-serif;
+    color: white;
+}
+
+.text-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: white;
+}
+
+
+/*/////////////////////////////////////////////*/
+/*Slideri te services*/
+
+.slider-title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 30px; 
+    color: #333; 
+    font-family: "Lilita One", sans-serif;
+}
+
+
+.slider{
+    padding-top:100px;
+    
+}
+
+.slider{width: 100%}
+.slider input{display: none;}
+.testimonials{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	min-height: 350px;
+	perspective: 1000px;
+	overflow: hidden;
+    
+}
+.testimonials .item img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 5px; 
+    
+}
+
+
+
+.testimonials .item{
+	width: 300px;
+	padding: 30px;
+	border-radius: 5px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(150,150,150,0.510329131652661) 0%, rgba(21,85,170,1) 72%);
+	position: absolute;
+	border:3px solid white;
+	top: 0;
+	box-sizing: border-box;
+	text-align: center;
+	transition: transform 0.4s;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	user-select: none;
+	cursor: pointer;
+}
+.testimonials .item h1{font-size: 114px; color: white;}
+.dots{display: flex; justify-content: center;align-items: center;}
+.dots label{
+	height: 5px;
+	width: 5px;
+	border-radius: 50%;
+	cursor: pointer;
+	background-color: #413B52;
+	margin: 7px;
+	transition-duration: 0.2s;
+}
+#t-1:checked ~ .dots label[for="t-1"],
+#t-2:checked ~ .dots label[for="t-2"],
+#t-3:checked ~ .dots label[for="t-3"],
+#t-4:checked ~ .dots label[for="t-4"],
+#t-5:checked ~ .dots label[for="t-5"]{
+	transform: scale(2);
+	background-color: #fff;
+	box-shadow: 0px 0px 0px 3px #dddddd24;
+}
+
+#t-1:checked ~ .dots label[for="t-2"],
+#t-2:checked ~ .dots label[for="t-1"],
+#t-2:checked ~ .dots label[for="t-3"],
+#t-3:checked ~ .dots label[for="t-2"],
+#t-3:checked ~ .dots label[for="t-4"],
+#t-4:checked ~ .dots label[for="t-3"],
+#t-4:checked ~ .dots label[for="t-5"],
+#t-5:checked ~ .dots label[for="t-4"]{
+	transform: scale(1.5);
+}
+
+#t-1:checked ~ .testimonials label[for="t-3"],
+#t-2:checked ~ .testimonials label[for="t-4"],
+#t-3:checked ~ .testimonials label[for="t-5"],
+#t-4:checked ~ .testimonials label[for="t-1"],
+#t-5:checked ~ .testimonials label[for="t-2"]{
+	transform: translate3d(600px, 0, -180px) rotateY(-25deg);
+	z-index: 2;
+}
+
+#t-1:checked ~ .testimonials label[for="t-2"],
+#t-2:checked ~ .testimonials label[for="t-3"],
+#t-3:checked ~ .testimonials label[for="t-4"],
+#t-4:checked ~ .testimonials label[for="t-5"],
+#t-5:checked ~ .testimonials label[for="t-1"]{
+	transform: translate3d(300px, 0, -90px) rotateY(-15deg);
+	z-index: 3;
+}
+
+#t-2:checked ~ .testimonials label[for="t-1"],
+#t-3:checked ~ .testimonials label[for="t-2"],
+#t-4:checked ~ .testimonials label[for="t-3"],
+#t-5:checked ~ .testimonials label[for="t-4"],
+#t-1:checked ~ .testimonials label[for="t-5"]{
+	transform: translate3d(-300px, 0, -90px) rotateY(15deg);
+	z-index: 3;
+}
+
+#t-3:checked ~ .testimonials label[for="t-1"],
+#t-4:checked ~ .testimonials label[for="t-2"],
+#t-5:checked ~ .testimonials label[for="t-3"],
+#t-2:checked ~ .testimonials label[for="t-5"],
+#t-1:checked ~ .testimonials label[for="t-4"]{
+	transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+	
+}
+
+#t-1:checked ~ .testimonials label[for="t-1"],
+#t-2:checked ~ .testimonials label[for="t-2"],
+#t-3:checked ~ .testimonials label[for="t-3"],
+#t-4:checked ~ .testimonials label[for="t-4"],
+#t-5:checked ~ .testimonials label[for="t-4"],
+#t-5:checked ~ .testimonials label[for="t-5"]{
+	
+	z-index: 4;
+}
+
+/*GAZETA*/
+
+.gazeta {
+    background: url(../images/back.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Lilita One", sans-serif;
+    margin-top: 80px;
+    height: 500px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.gazeta .content {
+    display: flex;
+    width: 80%;
+    height: 100%;
+}
+
+.gazeta .text-side, .gazeta .video-side {
+    flex: 1; 
+    padding: 20px;
+    color: #fff; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+iframe{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.gazeta .text-side h3 {
+    font-size: 2.2rem;
+    padding-bottom: .7rem;
+    font-weight: normal;
+    color: black;
+}
+
+.gazeta .text-side p {
+    font-size: 1.2rem;
+    color: #000;
+}
+
+
+/*PJESA E SERVICES MI TREGU - CARDS*/
+
+.wrapperi{
+    font-family: 'poppins',sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fafafa;
+}
+.wrapperi h1{
+    font-size: 3em;
+    font-family: "Lilita One", sans-serif;
+    margin: 25px;
+}
+.content-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin-top: 30px;
+}
+.carda{
+    min-height: 220px;
+    width: 320px;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    margin: 10px 4px;
+    box-shadow: 0px 15px 30px rgba(0,0,0,0.2);
+}
+.carda i{
+    margin: 20px;
+    color: darkblue;
+}
+.carda h2{
+    margin-bottom: 12px;
+    font-weight: 400;
+    text-align: center;
+    font-family: "Anton", sans-serif;
+}
+.carda p{
+    color: #6c757d;
+    text-align: center;
+    font-family: "Averia Serif Libre", serif;
+}
+.carda:hover i,
+.carda:hover p{
+    color: #fff;
+}
+.carda:hover h2{
+    color: white;
+}
+.carda:nth-child(1):hover{
+    background: linear-gradient(45deg,
+                                   rgba(88, 70, 159, 0.7) 0% ,
+                                   rgba(136, 113, 199, 0.7)100% ) ,
+                                   url(../images/zbardhimcard.jpg);
+                                    background-size: cover;
+}
+.carda:nth-child(2):hover{
+    background: linear-gradient(45deg,
+                                   rgba(88, 70, 159, 0.7) 0% ,
+                                   rgba(136, 113, 199, 0.7)100% ) ,
+                                   url(../images/rentgen.jpg);
+                                    background-size: cover;
+}
+.carda:nth-child(3):hover{
+    background: linear-gradient(45deg,
+                                   rgba(88, 70, 159, 0.7) 0% ,
+                                   rgba(136, 113, 199, 0.7)100% ) ,
+                                   url(../images/dentalcrown.jpg);
+                                    background-size: cover;
+}
+.carda:nth-child(4):hover{
+    background: linear-gradient(45deg,
+                                   rgba(88, 70, 159, 0.7) 0% ,
+                                   rgba(136, 113, 199, 0.7)100% ) ,
+                                   url(../images/pediatric.jpg);
+                                    background-size: cover;
+}
+.carda:nth-child(5):hover{
+    background: linear-gradient(45deg,
+                                   rgba(88, 70, 159, 0.7) 0% ,
+                                   rgba(136, 113, 199, 0.7)100% ) ,
+                                   url(../images/laser.jpg);
+                                    background-size: cover;
+}
+.carda:nth-child(6):hover{
+    background: linear-gradient(45deg,
+                                   rgba(88, 70, 159, 0.7) 0% ,
+                                   rgba(136, 113, 199, 0.7)100% ) ,
+                                   url(../images/dentalimplant.jpg);
+                                    background-size: cover;
+}
+
+/*PJESA E FUNDIT TEK SERVICES*/
+
+.smile-container {
+    font-family: Arial, sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.p-nalt{
+    margin-top: -45px;
+    font-size: 20px;
+}
+
+.smile-container h1 {
+    color: #333;
+    font-family: "Lilita One", sans-serif;
+}
+
+.smile-container p {
+    padding-top: 60px;
+    font-family: "Averia Serif Libre", serif;
+}
+
+.smile-steps {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.smile-step {
+    width: 30%;
+    position: relative;
+}
+
+.step-number {
+    position: absolute;
+    top: 335px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: darkblue;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: "Averia Serif Libre", serif;
+}
+
+.smile-step img {
+    width: 100%;
+    height: auto;
+}
+
+#butoni1{
+    margin-top: 30px;
+}
+
+
 
 
 
@@ -463,8 +1210,6 @@ footer{
 .socials a i{
     font-size: 20px
 }
-
-
 
 /*Forma per kontaktin */
 
