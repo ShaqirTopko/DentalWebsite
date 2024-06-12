@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Lumanosimo&family=PT+Serif&family=Playfair+Display:ital,wght@1,500&family=Seymour+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background: #f3f4f8;
+    color: #374049;
+    font-family: "Poppins", sans-serif;
+}
+.wrapper{
+    position: fixed;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background: rgb(98, 185, 214);
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.06);
+}
+.wrapper .navbar{
+    position: relative;
+}
+
+.profile{
+    padding: 25px;
+    text-align: center;
+}
+
+.profile_img{
+    width: 70px;
+    margin: 0 auto 10px;
+    display: block;
+}
+
+.profile_img img{
+    width: 100%;
+}
+
+.profile_info .name{
+    font-size: 25px;
+    font-weight: 800;    color: white;
+    font-family: "Lilita One", sans-serif;
+}
+
+.profile_info .role{
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+    margin-top: 10px;
+}
+
+.wrapper .navbar ul{
+    padding: 10px 40px;
+}
+
+.wrapper .navbar ul li > a{
+    display: block;
+    position: relative;
+    font-size: 14px;
+    padding: 15px;
+    height: 50px;
+    color: white;
+    font-weight: 600;
+    margin: 5px 0;
+}
+.wrapper .navbar ul li a .icon{
+    margin-right: 15px;
+    font-size: 20px;
+    color: white;
+}
+.wrapper .navbar ul li a > span{
+    display: inline-block;
+}
+
+.title_2{
+    color: white;
+}
+.logout-link{
+    margin-top: 280px;
+}
+
+#content {
+    margin-left: 350px;
+    margin-right: 60px;
+    padding-top: 70px;
+}
+
+
+#members {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    
+}
+
+#members td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    
+}
+
+#members th {
+    background-color: rgb(66, 66, 66);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+#members tr {
+    background-color: #fff;
+}
+
+#members tr td{
+    font-size: 13px;
+}
+
+a.link_delete {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 7px 5px;
+    background-color:rgb(203, 41, 41);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+ 
+}
+
+a.link_delete:hover {
+    background-color:rgb(150, 47, 47);
+}
+
+a.cancel-btn{
+    text-decoration: none;
+    text-align: center;
+    padding: 12px 30px;
+    background-color:rgb(89, 184, 228);
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+
+/* Forma per editimin e klinteve  */
+#klienti,#kontakti,#stafi,#destinacioni,#rezervimi{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f8f8f8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.forma-modifikim legend {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: black;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    border: none;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: black;
+    font-size: 14px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+.form-submit-delete {
+    background-color:rgb(211, 44, 44);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.form-submit-delete:hover {
+    background-color:rgb(150, 47, 47);
+}
